@@ -16,9 +16,10 @@ function App() {
 
   return (
     <div className="App">
+      <p>{date}</p> 
+
       <h1>Device Details</h1>
       
-
       {JSON.stringify(new DeviceDetector().parse("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36"))}
     </div>
   );

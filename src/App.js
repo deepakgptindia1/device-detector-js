@@ -4,6 +4,7 @@ import DeviceDetector from "device-detector-js";
 
 function App() {
   const [state, setState] = useState({});
+  const date = new Date().toString();  // Correctly initialize the date
 
   useEffect(() => {
     const deviceDetector = new DeviceDetector();
@@ -25,6 +26,7 @@ function App() {
       ) : (
         <p>Loading device details...</p>
       )}
+      <p>{date}</p>  {/* Display the date */}
     </div>
   );
 }
